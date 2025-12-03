@@ -16,78 +16,86 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 650px; /* antes era 900 */
             margin: auto;
-            padding: 20px;
+            padding: 15px;
         }
 
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 25px;
-            box-shadow: 0 0 18px rgba(0,0,0,0.5);
+        /* Logo pequena */
+        .logo {
+            width: 120px;
+            margin: 10px auto 25px;
+            display: block;
         }
 
         .title {
-            font-size: 32px;
-            margin: 10px 0 25px;
+            font-size: 26px;
+            margin-bottom: 20px;
             font-weight: bold;
-            letter-spacing: 1px;
+        }
+
+        /* Imagens menores */
+        .car-image {
+            width: 100%;
+            max-width: 550px; /* garante que no desktop não fique gigante */
+            border-radius: 8px;
+            margin: 15px auto;
+            display: block;
+            box-shadow: 0 0 12px rgba(0,0,0,0.45);
         }
 
         .label {
-            font-size: 22px;
-            margin-top: 20px;
+            font-size: 18px;
+            margin-top: 10px;
             font-weight: bold;
             color: #00e6ff;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
+            margin-top: 25px;
+            padding: 12px 22px;
             background: #00e6ff;
             color: #000;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             border-radius: 10px;
-            box-shadow: 0 0 15px #00e6ff;
+            box-shadow: 0 0 12px #00e6ff;
             transition: 0.25s;
         }
 
         .btn:hover {
             background: #00bcd4;
-            box-shadow: 0 0 25px #00e6ff;
+            box-shadow: 0 0 20px #00e6ff;
         }
+
     </style>
 </head>
 
 <body>
     <div class="container">
 
-        <!-- LOGO -->
-        <img src="logo.png" alt="Logo">
+        <!-- Logo pequena -->
+        <img class="logo" src="logo.png" alt="Logo">
 
         <div class="title">Car Customizer</div>
 
-        <!-- BOTÃO PARA A FERRAMENTA -->
+        <!-- Botão -->
         <a class="btn" href="https://tinyfy.io/CarCustom" target="_blank">
-            ➤ Abrir Ferramenta de Customização
+            ➤ Abrir Ferramenta
         </a>
 
         <!-- ANTES -->
         <div class="label">ANTES</div>
-        <img src="hr_8387.cr2_-e1574446155118.webp" alt="Carro Antes">
+        <img class="car-image" src="hr_8387.cr2_-e1574446155118.webp" alt="Antes">
 
-        <!-- DEPOIS 1 -->
-        <div class="label">DEPOIS (versão 1)</div>
-        <img src="gemini-custom-car (45).png" alt="Carro Depois 1">
+        <!-- DEPOIS -->
+        <div class="label">DEPOIS – Opção 1</div>
+        <img class="car-image" src="gemini-custom-car (45).png" alt="Depois 1">
 
-        <!-- DEPOIS 2 -->
-        <div class="label">DEPOIS (versão 2)</div>
-        <img src="gemini-custom-car (46).png" alt="Carro Depois 2">
+        <div class="label">DEPOIS – Opção 2</div>
+        <img class="car-image" src="gemini-custom-car (46).png" alt="Depois 2">
 
     </div>
 </body>
