@@ -1,59 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemini Car Customizer</title>
+    <title>Car Customizer</title>
 
     <style>
         body {
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             background: #111;
             color: #fff;
             text-align: center;
         }
 
-        header {
+        .container {
+            max-width: 900px;
+            margin: auto;
             padding: 20px;
         }
 
-        #logo {
-            width: 180px;
-            margin-bottom: 10px;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 25px;
+            box-shadow: 0 0 18px rgba(0,0,0,0.5);
         }
 
-        a.button {
+        .title {
+            font-size: 32px;
+            margin: 10px 0 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .label {
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #00e6ff;
+        }
+
+        .btn {
             display: inline-block;
             margin-top: 30px;
-            background: #00c853;
-            color: #000;
             padding: 15px 30px;
+            background: #00e6ff;
+            color: #000;
+            text-decoration: none;
             font-size: 20px;
             font-weight: bold;
             border-radius: 10px;
-            text-decoration: none;
-            transition: 0.3s;
+            box-shadow: 0 0 15px #00e6ff;
+            transition: 0.25s;
         }
 
-        a.button:hover {
-            background: #69f0ae;
+        .btn:hover {
+            background: #00bcd4;
+            box-shadow: 0 0 25px #00e6ff;
         }
     </style>
 </head>
+
 <body>
+    <div class="container">
 
-    <header>
-        <!-- Coloque seu logo depois -->
-        <img id="logo" src="logo.png" alt="Gemini Car Customizer Logo">
+        <!-- LOGO -->
+        <img src="logo.png" alt="Logo">
 
-        <h1>Gemini Car Customizer</h1>
-        <p>Click below to open the car customization tool.</p>
-    </header>
+        <div class="title">Car Customizer</div>
 
-    <a class="button" href="https://tinyfy.io/CarCustom" target="_blank">
-        Open the Customization App
-    </a>
+        <!-- BOTÃO PARA A FERRAMENTA -->
+        <a class="btn" href="https://tinyfy.io/CarCustom" target="_blank">
+            ➤ Abrir Ferramenta de Customização
+        </a>
 
+        <!-- ANTES -->
+        <div class="label">ANTES</div>
+        <img src="hr_8387.cr2_-e1574446155118.webp" alt="Carro Antes">
+
+        <!-- DEPOIS 1 -->
+        <div class="label">DEPOIS (versão 1)</div>
+        <img src="gemini-custom-car (45).png" alt="Carro Depois 1">
+
+        <!-- DEPOIS 2 -->
+        <div class="label">DEPOIS (versão 2)</div>
+        <img src="gemini-custom-car (46).png" alt="Carro Depois 2">
+
+    </div>
 </body>
 </html>
