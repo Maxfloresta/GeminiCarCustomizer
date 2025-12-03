@@ -1,153 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gemini Car Customizer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Car Customizer</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f6f6f6;
-      color: #222;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            text-align: center;
+        }
 
-    header {
-      background: #111;
-      color: white;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
+        header {
+            padding: 20px;
+        }
 
-    header img {
-      height: 50px;
-    }
+        #logo {
+            width: 180px;
+            margin-bottom: 10px;
+        }
 
-    header h1 {
-      font-size: 24px;
-      margin: 0;
-    }
+        a.button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #00c853;
+            color: #000;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .buttons {
-      margin: 25px 0;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .buttons a {
-      padding: 14px 22px;
-      background: #007bff;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: 0.2s;
-    }
-
-    .buttons a:hover {
-      background: #0056c6;
-    }
-
-    h2 {
-      margin-top: 40px;
-    }
-
-    .gallery {
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 30px;
-      margin-top: 40px;
-      background: #111;
-      color: #ccc;
-    }
-
-    @media (max-width: 700px) {
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+        a.button:hover {
+            background: #69f0ae;
+        }
+    </style>
 </head>
-
 <body>
 
-  <header>
-    <!-- Vai funcionar assim que você colocar logo.png no repositório -->
-    <img src="logo.png" alt="Logo" onerror="this.style.display='none';">
-    <h1>Gemini Car Customizer</h1>
-  </header>
+    <header>
+        <!-- Coloque seu logo depois -->
+        <img id="logo" src="logo.png" alt="Gemini Car Customizer Logo">
 
-  <div class="container">
+        <h1>Gemini Car Customizer</h1>
+        <p>Click below to open the car customization tool.</p>
+    </header>
 
-    <p>
-      A powerful AI-assisted tool that lets users upload any car photo and apply visual modifications such as new wheels, paint styles, widebody kits, spoilers, liveries, stance changes, and thematic backgrounds — all while preserving the original proportions, angle, and vehicle identity.
-    </p>
-
-    <div class="buttons">
-      <!-- Cole aqui o link do seu app no Google AI Studio -->
-      <a href="#" target="https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%2210U15qMcL8UlKWU4BDHxcgcXCPT9BsAkT%22%5D,%22action%22:%22open%22,%22userId%22:%22113571734862924940056%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing">🚀 Use the App</a>
-
-      <!-- Link automático para o repositório -->
-      <a href="https://github.com/Maxfloresta/GeminiCarCustomizer" target="_blank">📦 View Repository</a>
-    </div>
-
-    <h2>Before & After Examples</h2>
-
-    <div class="gallery">
-
-      <!-- BEFORE -->
-      <div class="card">
-        <h3>Before</h3>
-        <img src="hr_8387.cr2_-e1574446155118.webp" alt="Before car">
-      </div>
-
-      <!-- AFTER 1 -->
-      <div class="card">
-        <h3>After (Style 1)</h3>
-        <img src="gemini-custom-car (45).png" alt="After car style 1">
-      </div>
-
-      <!-- AFTER 2 -->
-      <div class="card">
-        <h3>After (Style 2)</h3>
-        <img src="gemini-custom-car (46).png" alt="After car style 2">
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="footer">
-    Gemini Car Customizer — Powered by Google Gemini AI  
-  </div>
+    <a class="button" href="https://tinyfy.io/CarCustom" target="_blank">
+        Open the Customization App
+    </a>
 
 </body>
 </html>
